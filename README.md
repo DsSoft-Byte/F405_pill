@@ -81,7 +81,11 @@
 
 ## VERSIONS:
 * The [F405_pill_V1.0](https://github.com/davidmolony/F405_pill/tree/RELEASE_V1.0) has been deprecated. 
-* The [F405_pill_V1.11](https://github.com/davidmolony/F405_pill/tree/main/F405_pill_V1.11) has an additional 100nF cap on the input to PA4 (throttle) and we suggest you use this for ordering. 
+* The [F405_pill_V1.11](https://github.com/davidmolony/F405_pill/tree/main/F405_pill_V1.11) has an additional 100nF cap on the input to PA4 (throttle) and we suggest you use this for ordering.
+
+## HOW TO COMPILE FIRMWARE YOURSELF
+* Precompiled V6.05 Firmware is included, see MP2.bin
+* Clone bldc "VESC Repo" and download "VESC Headers" Directory, use the "hw_MP2.c" and hw_MP2.h" files, put these into bldc/hwconf/trampa/100_250 and rename them to "hw_100_250.c" and "hw100_250.h" respectively, leave out the V3. run make on the 100_250 making sure you have all dependencies installed.
 
 ## V1.1 changes
 
